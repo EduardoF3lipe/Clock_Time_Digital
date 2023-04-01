@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    transition: all .2s linear;
+}
+
+:root {
+    --bg: linear-gradient(80deg, #1664dad9, #e58d8cd9);
+    --black: #000;
+    --white: #fff;
+    --gray: #616161;
+    --shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--bg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 5rem 4rem; 
+    width: 80rem;
+    border-radius: .5rem;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: .3rem;
+}
+
+
+.clock p:nth-child(1) {
+    font-weight: 400;
+    font-size: 7rem;
+}
+
+.clock p:nth-child(2) {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--gray);
+}
+
+.clock-container > span {
+    color: var(--gray);
+    font-size: 5rem;
+    justify-content: flex-start;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .clock-container {
+        background-color: var(--black);
+        flex-direction: column;
+        width: 20rem;
+        height: 90%;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .clock-container > span {
+        transform: rotate(90deg);
+    }
+    
+    .clock p:nth-child(2) {
+        font-size: 1.8rem;
+    }
+}
+
+
