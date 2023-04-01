@@ -35,6 +35,7 @@ body {
     background: var(--bg) no-repeat center center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .clock-container {
