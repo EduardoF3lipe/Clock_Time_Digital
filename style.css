@@ -31,7 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background: var(--bg) no-repeat center center;
     background-size: cover;
     position: relative;
@@ -126,10 +126,10 @@ body {
 }
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 330px) {
 
     
     html {
-        font-size: 55%;
+        font-size: 45%;
     }
 }
